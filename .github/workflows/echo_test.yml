@@ -4,6 +4,7 @@ on: push
 
 jobs:
   first_job:
-    name: first
     runs-on: ubuntu-latest
-    run: echo "Hi there!"
+    steps:
+      -name: first
+       run: echo "Hi there!"
