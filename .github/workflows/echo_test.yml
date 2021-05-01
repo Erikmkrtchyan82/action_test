@@ -8,10 +8,10 @@ jobs:
   first:
     runs-on: ubuntu-latest
     steps:
-      - name: first
+      - name: first_test
         run: echo 'Hi there!'
-  test1:
-    runs-on: ubuntu-latest 
+  second:
+    runs-on: ubuntu-latest
     steps:
-      - name: Echo something
-        run: echo 'something'
+      - name: second_test
+        run: echo 'second test' >> file.txt
