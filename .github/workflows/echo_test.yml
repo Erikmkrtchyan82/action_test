@@ -3,7 +3,7 @@ name: Echo something
 on: push
 
 jobs:
-  first_job:
+  first:
     runs-on: ubuntu-latest
     steps:
       -name: first
