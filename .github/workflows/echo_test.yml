@@ -8,5 +8,11 @@ jobs:
   first:
     runs-on: ubuntu-latest
     steps:
-      -name: first
+      - name: first
       run: echo 'Hi there!'
+
+  test1:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Echo something
+        run: echo 'something'
