@@ -1,0 +1,11 @@
+name: Echo something
+
+on:
+  push:
+    branches: master
+
+jobs:
+  first_job:
+    name: first
+    runs-on: ubuntu-latest
+    run: echo "Hi there!"
