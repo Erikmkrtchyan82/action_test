@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: second_test
-        run: echo 'second test' >> file.txt
+        run: echo 'second test' >> file.txt; cat file.txt
