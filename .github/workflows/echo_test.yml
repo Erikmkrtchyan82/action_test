@@ -4,15 +4,18 @@ on:
   push:
     branches: [master]
 
+env:
+  FILE: file.txt
+
 jobs:
   first:
     runs-on: ubuntu-latest
     steps:
       - name: first_test
-        run: echo 'Hi there!' >> file.txt
+        run: echo 'Hi there!' >> $FILE; cat $FILE
   second:
     runs-on: ubuntu-latest
     needs: first
     steps:
       - name: second_test
-        run: echo 'second test' >> file.txt; cat file.txt
+        run: echo 'second test' >> $FILE; cat $FILE
