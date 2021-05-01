@@ -1,8 +1,6 @@
 name: Echo something
 
-on:
-  push:
-    branches: master
+on: push
 
 jobs:
   first_job:
