@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first_test
-        run: echo 'Hi there!' >> ${{FILE}}; cat ${{FILE}}
+        run: echo 'Hi there!' >> ${{ FILE }}; cat ${{ FILE }}
   second:
     runs-on: ubuntu-latest
     needs: first
     steps:
       - name: second_test
-        run: echo 'second test' >> ${{FILE}}; cat ${{FILE}}
+        run: echo 'second test' >> ${{ FILE }}; cat ${{ FILE }}
