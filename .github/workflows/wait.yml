@@ -1,0 +1,13 @@
+name: Wait_test
+
+on:
+  workflow_run:
+    workflows: Echo_something
+    types: 
+      - completed
+      
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Yes"
